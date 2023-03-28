@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int64_t checksum(char **arg1)
+{
+    char **var_20h;
+    int64_t var_10h;
+    
+    var_10h = 0;
+    for (var_20h = arg1;
+    *(char *)var_20h != '\0';
+    var_20h = (char **)((int64_t)var_20h + 1)) 
+    {
+        var_10h = var_10h + *(char *)var_20h;
+    }
+    return var_10h;
+}
+}
