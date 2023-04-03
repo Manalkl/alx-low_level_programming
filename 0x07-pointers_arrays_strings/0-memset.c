@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
+ * _memset - function fill the first @n bytes of the memory area pointed
+ * to by @s with the constant byte @b
  *
- * @b: Each memory location corresponds to one byte of memory
+ * @n: bytes of the memory area pointed to by @s
  *
- * @s: will be set to the value b
+ * @s: with the constant byte @b
  *
- * @n: indicates the number of consecutive memory locations starting from s
+ * @b: memory area pointer
  *
+ * Return: a pointer to the memory area @s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
